@@ -29,7 +29,10 @@ db.collection('bookstest').onSnapshot(snapshot => {
 						
                        const li2 = `
 						<li>
-							<div class="collapsible-header grey lighten-4"> ${doc.data().title} </div>
+							<div class="collapsible-header grey lighten-4"> ${doc.data().title}
+							<input type="button" class="d-block mr-0 ml-auto btn btn-secondary" value="Edit"> 
+                            				&emsp;<button>&emsp;<i class="fa fa-trash-o"></i></button>
+							</div>
 							<div class="collapsible-body white"> ${doc.data().author} </div>
 							<div class="collapsible-body white"> ${doc.data().ISBN} </div>
 							<div class="collapsible-body white"> ${doc.data().Term} </div>
